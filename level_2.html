@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@300;400&family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/level_2.css">
+    <title>Document</title>
+</head>
+<body onload="foo()">
+    <div class="tutorial tutorial_hide">
+        <div class="tutorial_label">
+            <h1>T U T O R I A L</h1>
+        </div>
+        <img src="gif/example.gif">
+        <div class="tutorial_text" onclick="slideRight()">
+            <a>Spectral analysis is a set of methods for high-quality and quantifying the composition of the object, based on the study of the spectra of the interaction of matter with various types of radiation.</a><br><br>
+            <a>You will be given a spectrum of an unknown substance, as well as several fragments. It is necessary to compare fragments so as to fill all the spaces in the spectrum.</a>
+        </div>
+        <input class="slide_back" type="button" value="< C L O S E >" onclick="slideBack(1)">
+    </div>
+    <div class="level">
+        <div class="info">
+            <div class="fragment_list_label">
+                <h2>FRAGMENTS INVENTORY</h2>
+            </div>
+            <div class="username_label">
+                <h2 id="username"></h2>
+            </div>
+            <div class="timer">
+                <div class="timer_seconds">01:30</div>
+            </div>
+        </div>
+        <div class="fragments">
+            <div id = "fragments_box"class="js_cell">
+            </div>
+        </div>
+        <div class="spectrum">
+            <div class="pattern_box">
+                <div class="progress">
+                    <div class="progress_label">PATTERN FOUND!</div>
+                </div>
+                <div class="m_box">
+                    <div id="m1" class="m js_indicator"></div>
+                    <div id="m2" class="m js_indicator"></div>
+                    <div id="m3" class="m js_indicator"></div>
+                    <div id="m4" class="m js_indicator"></div>
+                    <div id="m5" class="m js_indicator"></div>
+                    <div id="m6" class="m js_indicator"></div>
+                    <div id="m7" class="m js_indicator"></div>
+                    <div id="m8" class="m js_indicator"></div>
+                    <div id="m9" class="m js_indicator"></div>
+                    <div id="m10" class="m js_indicator"></div>
+                    <div id="m11" class="m js_indicator"></div>
+                    <div id="m12" class="m js_indicator"></div>
+                </div>
+                <img id="pattern" src="svg/pat_4.svg">
+            </div>
+            <div class="match_box">
+                <div id="match_1" class = "js_cell"></div>
+                <div id="match_2" class = "js_cell"></div>
+                <div id="match_3" class = "js_cell"></div>
+                <div id="match_4" class = "js_cell"></div>
+                <div id="match_5" class = "js_cell"></div>
+                <div id="match_6" class = "js_cell"></div>
+                <div id="match_7" class = "js_cell"></div>
+                <div id="match_8" class = "js_cell"></div>
+                <div id="match_9" class = "js_cell"></div>
+            </div>
+        </div>
+    </div>
+    <div class="result result_hide">
+        <div class="result_label">
+            <h1>R E S U L T S</h1>
+        </div>
+        <div class="result_menu" onclick="slideLeft()">
+            <input id="previous_level" type="button" value="Easy level" onclick="previousLevel()">
+            <input id="save_result" type="button" value="Save current result" onclick="saveResult()">
+            <input id="download" type="button" value="Download all results" onclick="downloadResults()">
+            <input id="delete" type="button" value="Delete results" onclick="deleteResults()"> 
+            <input id="restart" type="button" value="Restart" onclick="restart()">    
+        </div>
+        <div class="result_info">
+            <div id="pattern_number_label">Pattern number:</div>
+            <div id="pattern_number">B62</div>
+            <div id="pattern_name">U N D E F I N E D</div>
+            <div id="score_label">YOUR SCORE</div>
+            <div id="score"></div>
+        </div>
+        <div class="result_rating">
+            <ul class="rating">
+            </ul>
+        </div>
+        <input class="slide_back" type="button" value="< C L O S E >" onclick="slideBack(-1)">
+    </div>
+    <script src="js/level_2.js"></script>
+</body>
+</html>
