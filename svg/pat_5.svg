@@ -1,0 +1,35 @@
+<svg width="754" height="62" viewBox="0 0 754 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g style="mix-blend-mode:darken">
+<rect x="753.5" y="0.5" width="61" height="753" transform="rotate(90 753.5 0.5)" fill="url(#paint0_linear_53_1139)" stroke="#1DDADD"/>
+<rect x="753" y="1" width="60" height="752" transform="rotate(90 753 1)" fill="url(#paint1_radial_53_1139)"/>
+<rect x="349" y="1" width="4.7" height="60" fill="black"/>
+<rect x="48" y="1" width="4.7" height="60" fill="black"/>
+<rect x="251" y="1" width="1" height="60" fill="#1DDADD"/>
+<rect x="502" y="1" width="1" height="60" fill="#33A3B2"/>
+<rect x="651" y="1" width="4.7" height="60" fill="black"/>
+<rect x="654" y="1" width="4.7" height="60" fill="black"/>
+<rect x="51" y="1" width="4.7" height="60" fill="black"/>
+<rect x="352" y="1" width="4.7" height="60" fill="black"/>
+<rect x="347" y="1" width="4.7" height="60" fill="black"/>
+<rect x="649" y="1" width="4.7" height="60" fill="black"/>
+<path d="M1 1V0H0V1H1ZM753 1H754V0H753V1ZM753 61V62H754V61H753ZM1 61H0V62H1V61ZM1 2H753V0H1V2ZM752 1V61H754V1H752ZM753 60H1V62H753V60ZM2 61V1H0V61H2Z" fill="black"/>
+</g>
+<rect x="46" y="1" width="4.7" height="60" fill="black"/>
+<defs>
+<linearGradient id="paint0_linear_53_1139" x1="783" y1="1" x2="783" y2="753" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C00045"/>
+<stop offset="0.0495354" stop-color="#CC0404"/>
+<stop offset="0.213542" stop-color="#BE6904"/>
+<stop offset="0.380208" stop-color="#B2B600"/>
+<stop offset="0.510417" stop-color="#07CA03"/>
+<stop offset="0.619792" stop-color="#03BCB1"/>
+<stop offset="0.786901" stop-color="#030AB8"/>
+<stop offset="0.929617" stop-color="#A305BD"/>
+<stop offset="1" stop-color="#B80042"/>
+</linearGradient>
+<radialGradient id="paint1_radial_53_1139" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(783 353) rotate(90) scale(445 35.5053)">
+<stop offset="0.213542" stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="#1C6B84" stop-opacity="0.69"/>
+</radialGradient>
+</defs>
+</svg>
