@@ -365,7 +365,6 @@ function slideLeft() {
     document.querySelector('.result_menu').style.cursor = "unset";
     // slideBack(tutorial, "-1030px");
     results.classList.add('result_show');
-    clearInterval(timerId);
     // slideBack(1);
 }
 
@@ -381,11 +380,11 @@ function slideBack(side) {
     if (side > 0) {
         tutorial.classList.remove('tutorial_show');
         document.querySelector('.tutorial_text').style.cursor = "pointer";
+        timerId = setInterval(timer, 1000);
     } else {
         document.querySelector('.result_menu').style.cursor = "pointer";
         results.classList.remove('result_show');
     }
-    timerId = setInterval(timer, 1000);
 }
 
 function rating(players) {
@@ -410,6 +409,8 @@ function nextLevel() {
 function saveResult() {
     if (!passed) {
         hrono = 0;
+        timer();
+        clearInterval(timerId);
     }
     var players = JSON.parse(localStorage.getItem("players"));
     console.log(players);
