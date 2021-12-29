@@ -33,6 +33,7 @@ function start() {
     sessionStorage.setItem('username', username.value);
     sessionStorage.setItem('background', document.body.style.background.toString())
     console.log(sessionStorage.getItem('username'));
+    console.log(localStorage.getItem('players'));
 }
 
 function isEmpty(str) {
