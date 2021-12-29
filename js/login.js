@@ -33,7 +33,7 @@ function start() {
     sessionStorage.setItem('username', username.value);
     sessionStorage.setItem('background', document.body.style.background.toString())
     console.log(sessionStorage.getItem('username'));
-    document.location.href = "level_1.html";
+//     document.location.href = "level_1.html";
 }
 
 function isEmpty(str) {
