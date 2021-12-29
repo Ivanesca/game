@@ -21,7 +21,7 @@ function switchMode() {
 function start() {
     console.log("aloha");
     sessionStorage.clear;
-    if (localStorage.getItem("players")) {
+    if (localStorage.getItem("players") == null) {
         localStorage.setItem("players", JSON.stringify([]));
         console.log("initial players array");
     }
@@ -34,6 +34,7 @@ function start() {
     sessionStorage.setItem('background', document.body.style.background.toString())
     console.log(sessionStorage.getItem('username'));
     console.log(localStorage.getItem('players'));
+    document.location.href = "level_1.html";
 }
 
 function isEmpty(str) {
