@@ -346,7 +346,7 @@ function rating(players) {
 function addPlayers(players) {
     players.forEach(element => {
         var li = document.createElement("li");
-        li.innerHTML = element;
+        li.innerHTML = element.substring(0, element.indexOf(" - ")) + element.substring(element.lastIndexOf(" - "));
         document.querySelector('.rating').appendChild(li);
     });
 }
@@ -365,19 +365,20 @@ function saveResult() {
         clearInterval(timerId);
         timer()
     }
+    var d = new Date().toUTCString();
     var players = JSON.parse(localStorage.getItem("players"));
     console.log(players);
-    players.push(username + " " + hrono * 121);
+    players.push(username + " - " + d + " - " + hrono * 121);
     console.log(players);
     localStorage.setItem("players", JSON.stringify(players));
     rating(players);
 }
 
 function downloadResults() {
-    var blob = new Blob([localStorage.getItem("players")], {type: "text"});
+    var blob = new Blob([JSON.parse(localStorage.getItem("players")).join("\n")], {type: "text/plain"});
     var link = document.createElement("a");
-    link.setAttribute("href", URL.createObjectURL(blob));
     link.setAttribute("download", "All_results_" + Date.now());
+    link.setAttribute("href", URL.createObjectURL(blob));
     link.click();
     console.log("download");
 }
