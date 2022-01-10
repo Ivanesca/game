@@ -63,8 +63,8 @@ body {
     grid-row: 2/3;
     grid-column: 3/4;
     text-align: justify;
-    padding-right: 55px;
-    margin: 45px 0px 5px -70px;
+    padding-right: 56px;
+    margin: 25px 0px 5px -70px;
     cursor: pointer;
 }
 
@@ -367,7 +367,6 @@ body {
     margin: 10px auto 30px;
     height: 60px;
     width: 0px;
-    background-color: #2BFF90;
     transition: 1s;
 }
 
@@ -377,7 +376,7 @@ body {
     font-weight: 400;
     margin: 7px auto auto auto;
     text-align: center;
-    color: #002649;
+    color: rgba(0, 0, 0, 0.905);
     transition: 0.6s;
     opacity: 0;
 }
@@ -389,6 +388,12 @@ body {
 
 .progress_appear {
     width: 650px;
+    background-color: #2BFF90;
+}
+
+.time_out {
+    width: 650px;
+    background-color: #c85050;
 }
 
 .match_box {
