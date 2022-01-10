@@ -14,8 +14,8 @@
         </div>
         <img src="gif/example.gif">
         <div class="tutorial_text" onclick="slideRight()">
-            <a>Spectral analysis is a set of methods for high-quality and quantifying the composition of the object, based on the study of the spectra of the interaction of matter with various types of radiation.</a><br><br>
-            <a>You will be given a spectrum of an unknown substance, as well as several fragments. It is necessary to compare fragments so as to fill all the spaces in the spectrum.</a>
+            <a>Спектральный анализ - это совокупность определенных методов качественного и количественного определения состава объекта, основанных на изучении спектров взаимодействия вещества с различными видами излучений.</a><br><br>
+            <a>Вам дан спектр неизвестного вещества, а также несколько фрагментов. Необходимо сопоставтиь фрагменты так, чтобы заполнить все пробелы в спектре.</a>
         </div>
         <input class="slide_back" type="button" value="< C L O S E >" onclick="slideBack(1)">
     </div>
@@ -38,7 +38,7 @@
         <div class="spectrum">
             <div class="pattern_box">
                 <div class="progress">
-                    <div class="progress_label">PATTERN FOUND!</div>
+                    <div class="progress_label"></div>
                 </div>
                 <div class="m_box">
                     <div id="m1" class="m js_indicator"></div>
@@ -75,7 +75,8 @@
             <input id="save_result" type="button" value="Save current result" onclick="saveResult()">
             <input id="download" type="button" value="Download all results" onclick="downloadResults()">
             <input id="delete" type="button" value="Delete results" onclick="deleteResults()"> 
-            <input id="restart" type="button" value="Restart" onclick="restart()">    
+            <input id="restart" type="button" value="Restart" onclick="restart()">
+            <input id="new_user" type="button" value="Login" onclick="login()">  
         </div>
         <div class="result_info">
             <div id="pattern_number_label">Pattern number:</div>
