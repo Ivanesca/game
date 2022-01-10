@@ -26,14 +26,14 @@ function start() {
         console.log("initial players array");
     }
     var username = document.querySelector('#username');
-    if (/\W+/.test(username.value)) {      
+    console.log(username.value.toString);
+    if (username.value == '') {      
         username.style.border = "3px solid #db3434";
         return;
     }
     sessionStorage.setItem('username', username.value);
     sessionStorage.setItem('background', document.body.style.background.toString())
     console.log(sessionStorage.getItem('username'));
-    console.log(localStorage.getItem('players'));
     document.location.href = "level_1.html";
 }
 

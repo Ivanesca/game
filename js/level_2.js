@@ -39,8 +39,12 @@ function foo() {
 
 function timer() {
     if (hrono <= 0) {
+        clearInterval(timerId);
+        progressBar.classList.add('time_out');
+        progressLabel.classList.add('label_appear');
+        progressLabel.innerHTML = "PATTERN NOT FOUND";
         document.querySelector('.level').style.pointerEvents = "none";
-        showResult();
+        timerId = setTimeout(showResult, 2000);
     } else {
         hrono -= 1;
         var minutes = ~~(hrono/60);
@@ -102,6 +106,7 @@ const dragAndDrop = () => {
             clearInterval(timerId);
             progressBar.classList.add('progress_appear');
             progressLabel.classList.add('label_appear');
+            progressLabel.innerHTML = "PATTERN FOUND!";
             document.querySelector('#pattern_name').innerHTML = patternName;
             document.querySelector('#pattern_name').style.background = "#2BFF90";
             document.querySelector('#pattern_name').style.color = "#1F3E46";
@@ -404,6 +409,10 @@ function addPlayers(players) {
 
 function nextLevel() {
     document.location.href = "level_2.html";
+}
+
+function login() {
+    document.location.href = "index.html";
 }
 
 function saveResult() {
